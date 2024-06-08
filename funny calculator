@@ -1,0 +1,47 @@
+#include <iostream>
+#include <cstdint>
+int main() {
+	std::cout << "## mode?)\n";
+	std::cout << "## 0 = standart mode - 1 = joke mode\n";
+	int mode;
+	std::cin >> mode;
+	if (mode == 0) {
+		long long  thefirstnumber, thesecondnumber;
+		char operation;
+		std::cout << "## say for first number\n";
+		std::cin >> thefirstnumber;
+		std::cout << "## say for second number\n";
+		std::cin >> thesecondnumber;
+		std::cout << "## say for operation\n";
+		std::cin >> operation;
+		if (operation == '+') {
+			std::cout << thefirstnumber + thesecondnumber;
+		}
+		else if (operation == '-') {
+			std::cout << thefirstnumber - thesecondnumber;
+		}
+		else if (operation == '*') {
+			std::cout << thefirstnumber * thesecondnumber;
+		}
+		else if (operation == '/') {
+			std::cout << thefirstnumber / thesecondnumber;
+		}
+		else if (operation == ':') {
+			std::cout << thefirstnumber / thesecondnumber;
+		}
+		else if (operation == '%') {
+			std::cout << thefirstnumber % thesecondnumber;
+		}
+		else if (operation == '^') {
+			std::cout << "^_^\n";
+		}
+
+	}
+	else if(mode == 1) {
+		std::cout << "I told a bad chemistry joke once.\n He didn't cause any reaction.";
+		std::cout << ")";
+	}
+	else if (mode > 1 || mode < 0) {
+		std::cout << "bad joke((((";
+	}
+}
