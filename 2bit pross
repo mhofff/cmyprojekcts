@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+	//2bit prosesor
+	int a, b;
+	std::cout << "enter 2 number 0 or 1\n";
+	std::cin >> a;
+	std::cin >> b;
+	if (a == 0 && b == 0) {
+
+		std::cout << "off";
+	}
+	else if (a == 1 && b == 1) {
+		std::cout << "on";
+
+	}
+	else if (a == 0&& b == 1) {
+		std::cout << "offoff";
+	}
+	else if (a == 1&& b == 0) {
+		std::cout << "onon";
+
+	}
+}
